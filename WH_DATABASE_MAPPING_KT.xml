@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <items>
+      <element>
+         <disposition null="true" />
+         <dtmsLotId null="true" />
+         <epc>2000017822366</epc>
+         <eraAction null="true" />
+         <eraDestination null="true" />
+         <inventoryStatus null="true" />
+         <obPackageIndicator null="true" />
+         <oldEpc null="true" />
+         <productCondition null="true" />
+         <receivedQuantity null="true" />
+         <requiredQuantity>1</requiredQuantity>
+         <seqNo>1</seqNo>
+         <shippedQuantity>1</shippedQuantity>
+         <sku>4065036</sku>
+         <transactionType null="true" />
+      </element>
+   </items>
+   <manifest>
+      <bbyLastUpdatedSystem>SP</bbyLastUpdatedSystem>
+      <createDate>2018-10-30T07:00:00.000Z</createDate>
+      <detailComments>645489</detailComments>
+      <externalTransferNumber>909252</externalTransferNumber>
+      <numberDetails>1</numberDetails>
+      <receiveDate null="true" />
+      <receiveLocation>11</receiveLocation>
+      <receiveLocationType>S</receiveLocationType>
+      <retekTransferNumber>-1</retekTransferNumber>
+      <shipDate>2018-10-14T22:35:09.251Z</shipDate>
+      <shipLocation>0000</shipLocation>
+      <shipLocationType>S</shipLocationType>
+      <status>0</status>
+      <trackingNo>1Z4390F20317136999</trackingNo>
+      <type>P</type>
+      <uniqueDate>11-13-2018</uniqueDate>
+      <uniqueTime>02:35:09.251</uniqueTime>
+      <updateDate>2018-10-30T07:00:00.000Z</updateDate>
+      <updateId>SP</updateId>
+   </manifest>
+</root>

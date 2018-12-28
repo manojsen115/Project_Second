@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/wmb_audit.xsd"/>
+    <output path="db:table(/SPIDB001.dbm,SPIDB001,Staging,MissingAccessories)" var="MissingAccessories"/>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="Mapping_Node_Flow_Mapping">
+        <input path="mb:msg(DATA,assembly,XMLNSC,Properties)"/>
+        <output path="$MissingAccessories/db:insert(fn:false(),MissingAccessoriesID,SerialNumber,IMEINumber,MissingAccessoriesSKU,MissingAccesssoriesLongDescription,MissingAccessoriesCharges)" var="dbinsert"/>
+        <assign value="A">
+            <output path="$dbinsert/SerialNumber"/>
+        </assign>
+        <assign value="A">
+            <output path="$dbinsert/IMEINumber"/>
+        </assign>
+        <assign value="M">
+            <output path="$dbinsert/MissingAccessoriesSKU"/>
+        </assign>
+        <assign value="M">
+            <output path="$dbinsert/MissingAccesssoriesLongDescription"/>
+        </assign>
+        <assign value="M">
+            <output path="$dbinsert/MissingAccessoriesCharges"/>
+        </assign>
+    </mappingDeclaration>
+</mappingRoot>

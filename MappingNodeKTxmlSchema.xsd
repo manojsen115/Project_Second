@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Msg">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="details"/>
+        <xsd:element ref="TimeoutRequest"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StartDate" type="xsd:string"/>
+  <xsd:element name="Action" type="xsd:string"/>
+  <xsd:element name="Identifier" type="xsd:string"/>
+  <xsd:element name="StartTime" type="xsd:string"/>
+  <xsd:element name="IgnoreMissed" type="xsd:string"/>
+  <xsd:element name="details" type="xsd:string"/>
+  <xsd:element name="AllowOverwrite" type="xsd:string"/>
+  <xsd:element name="TimeoutRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Action"/>
+        <xsd:element ref="Identifier"/>
+        <xsd:element ref="StartDate"/>
+        <xsd:element ref="StartTime"/>
+        <xsd:element ref="Interval"/>
+        <xsd:element ref="IgnoreMissed"/>
+        <xsd:element ref="AllowOverwrite"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Interval" type="xsd:string"/>
+</xsd:schema>
